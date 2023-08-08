@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #0f141e;
+    background: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:active {
+    color: blue;
+}
+
+.education {
+    margin-bottom: 20px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 10px 8px;
+}
+
+.list li:nth-child(2),
+.list li:nth-child(4) {
+    background: lightsalmon;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.photo {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 5%;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.info {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contacts h2 {
+    text-align: center;
+}
+
+.card-1 {
+    background-color: aquamarine;
+    border: 1px solid blue;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.card-2 {
+    background-color: rgb(243, 255, 174);
+    border: 1px solid yellow;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.card-3 {
+    background-color: rgb(255, 127, 155);
+    border: 1px solid red;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.btn {
+    background: #111;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86898f;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-group .contacts-item {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.contacts-item label {
+    display: block;
+    font-size: 16px;
+    color: #86898f;
+}
+
+.contacts-item input,
+.contacts-item textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0 10px 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+@media (max-width: 650px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        width: 200px;
+        align-self: center;
+    }
+    .topinfo h1 {
+        font-size: 22px;
+    }
+    .topinfo p {
+        font-size: 16px;
+    }
+    .social {
+        text-align: center;
+    }
+}
